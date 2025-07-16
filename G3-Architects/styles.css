@@ -152,6 +152,26 @@ main > section {
   max-width: 540px;
 }
 
+.sponsor_info {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponsor_title {
+  margin-bottom: 24px;
+}
+
+.sponsor_companies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
+.sponsor_companies img {
+  filter: grayscale();
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -168,6 +188,32 @@ main > section {
   .our_features {
     min-width: 90%;
     margin: 20px;
+  }
+
+  .facts_container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .some_facts_title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .fact_description {
+    width: 95%;
+  }
+
+  .sponsor_info {
+    max-width: calc(100% - 10px);
+    margin: 10px auto;
+  }
+
+  .sponsor_companies {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
   }
 }
 
